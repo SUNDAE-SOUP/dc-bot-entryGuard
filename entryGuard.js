@@ -13,7 +13,7 @@ client.once('ready', () => {
 });
 
 client.on('guildMemberAdd', async (member) => {
-    const roleName = "Mga Mamamayan"; //Change this to the role name you want to assign
+    const roleName = "MGA MAMAMAYAN"; //Change this to the role name you want to assign
     const role = member.guild.roles.cache.find(r => r.name === roleName);
 
     if (role) {
