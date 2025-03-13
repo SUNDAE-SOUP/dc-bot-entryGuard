@@ -2,7 +2,7 @@ const { Client, GatewayIntentBits } = require('discord.js');
 require('dotenv').config();
 
 // Add the specific server ID you want to track
-const TARGET_GUILD_ID = '1120717903478652948'; // Replace with your server ID
+const TARGET_GUILD_ID = '689312997164056626'; // Replace with your server ID
 
 const client = new Client({
     intents: [
