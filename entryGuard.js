@@ -67,7 +67,7 @@ client.on('guildMemberAdd', async (member) => {
             
             if (welcomeChannel) {
                 welcomeChannel.send(
-                    `Welcome ${member.user}! You were invited by ${usedInvite.inviter.tag}. `
+                    `User: ${member.user}. You were invited by ${usedInvite.inviter.tag}. `
                 );
             } else {
                 console.log('Welcome channel not found!');
