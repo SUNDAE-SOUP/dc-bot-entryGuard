@@ -67,7 +67,7 @@ client.on('guildMemberAdd', async (member) => {
             
             if (welcomeChannel) {
                 welcomeChannel.send(
-                    `Welcome ${member.user}! You were invited by ${usedInvite.inviter.tag}. `
+                    `User: ${member.user}. You were invited by ${usedInvite.inviter.tag}. `
                 );
             } else {
                 console.log('Welcome channel not found!');
@@ -79,7 +79,7 @@ client.on('guildMemberAdd', async (member) => {
 });
 
 client.on('inviteCreate', async (invite) => {
-    // Only track invites for the target server
+    // Only track invites for TP server
     if (invite.guild.id !== TARGET_GUILD_ID) return;
 
     try {
