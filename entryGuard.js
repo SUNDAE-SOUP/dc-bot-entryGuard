@@ -62,7 +62,7 @@ client.on('guildMemberAdd', async (member) => {
         currentInvites.each(invite => guildInvites.set(invite.code, invite.uses));
 
         if (usedInvite) {
-            const welcomeChannelId = '1120717903478652948';
+            const welcomeChannelId = '689312997164056801';
             const welcomeChannel = member.guild.channels.cache.get(welcomeChannelId);
             
             if (welcomeChannel) {
